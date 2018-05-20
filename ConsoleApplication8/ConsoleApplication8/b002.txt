@@ -1,0 +1,16 @@
+synonyms.txt
+
+A B A N D O N # 
+# G R E A T # .   
+A .   .   .   S .   .   .   
+S M O T H E R # 
+S .   .   .   # .   .   .   
+E .   .   .   .   .   .   .   
+N .   .   .   .   .   .   .   
+T .   .   .   .   .   .   .   
+
+AeV  DASH
+DaH  SMOTHER
+AaH  ABANDON
+CaV  ASSENT
+BbH  GREAT
