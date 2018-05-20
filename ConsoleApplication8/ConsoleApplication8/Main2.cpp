@@ -105,12 +105,15 @@ int Game(Board &c, Dictionary &d, Player &h, string boardName)
 	{
 		while (!cin.eof())
 		{
-			while (!c.verifyPosition(position))//verify erros in writting the position
+	
+			while (!(c.verifyPosition(position) && c.RightPosition(position)))//verify erros in writting the position
 			{
 				cout << "Invalid position.Try again";
 				cout << "Position ( LCD / CNTRL-Z = stop)  ? " << endl;
 				cin >> position;
+
 			}
+			
 
 			cout << "Word ( - = remove / ? = help / + = return ) .. ? " << endl;
 			cin >> word;

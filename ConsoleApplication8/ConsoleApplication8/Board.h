@@ -51,6 +51,7 @@ public:
 	bool writePlayerBoard(std::string orientation, const std::string input);//similir to writeBoard but made for the board in programm2, checks diferent conditions and assumes were check in programa 1
 	bool deletePlayerWord(std::string position);//deletes a word from the programm 2 board
 	bool RepeatPlayerWord(std::string word);
+	bool RightPosition(std::string position);
 	~Board();
 private:
 	unsigned int y;//board length
