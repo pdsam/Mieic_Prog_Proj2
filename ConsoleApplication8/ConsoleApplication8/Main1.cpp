@@ -18,6 +18,7 @@ void Uppers(string &s) //converts all caracters to uppercases
 	}
 
 }
+//
 ////////////////////////////////////////////////////////////////////
 void ProgramBegin(int &a)
 {
