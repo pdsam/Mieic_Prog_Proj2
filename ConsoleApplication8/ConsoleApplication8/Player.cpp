@@ -19,7 +19,7 @@ Player::Player()
 void Player::addClues()
 //updates clues each time the player asks for help
 {
-	clues = clues++;
+	this->clues = clues + 1;
 }
 //////////////////////////////////////////////////
 void Player::saveGame(string boardName)

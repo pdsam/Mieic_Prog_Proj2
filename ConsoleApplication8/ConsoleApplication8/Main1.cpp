@@ -236,7 +236,10 @@ int main()
 			b.resumeBoard(name, dictName); //updates the board
 			Dictionary d(dictName, resume);
 			if (resume == 2) //in case the dictionary is unavailable we return to the menu
+			{
+				resume = 1;
 				break;
+			}
 
 			b.displayBoard();
 

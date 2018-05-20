@@ -46,7 +46,7 @@ Dictionary::Dictionary(string &dictName, int &resume)
 	{
 		if (resume == 1)
 		{
-			cout << "Dictionary unavailable!" << endl;
+			cout << "Dictionary unavailable!" << endl << endl;
 			resume = 2;
 			return;
 		}

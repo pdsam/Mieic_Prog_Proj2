@@ -1,4 +1,4 @@
-synonyms.txt
+ss.txt
 
 A B A N D O N # 
 # G R E A T # .   

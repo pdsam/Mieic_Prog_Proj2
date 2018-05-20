@@ -81,7 +81,7 @@ void Clues(Board &c, Dictionary &d)
 	}
 }
 
-int Game(Board &c, Dictionary &d, Player h, string boardName)
+int Game(Board &c, Dictionary &d, Player &h, string boardName)
 {
 
 	///////////////////////////////////
@@ -212,7 +212,7 @@ int main()
 {
 	//a: menu game option; t1: beggining time; t2: ending time; save: true ->save the player information
 	int a,resume;
-	resume = 0;
+	resume = 1;
 	a = 1000;
 	time_t t1, t2;
 	bool save;
@@ -236,6 +236,11 @@ int main()
 		//load the board and process it fo the game, and load dictionary
 		Board c(boardName, dictiName);
 		Dictionary d(dictiName, resume);
+		if (resume == 2) //in case the dictionary is unavailable we return to the menu
+		{
+			resume = 1;
+			break;
+		}
 		c.convert_to_playboard();
 		c.displayPlayBoard();
 
