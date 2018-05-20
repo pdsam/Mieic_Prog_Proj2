@@ -218,7 +218,7 @@ int main()
 	resume = 1;
 	a = 1000;
 	time_t t1, t2;
-	bool save;
+	int save;
 	string boardName, dictiName;
 
 	while (a != 0)
@@ -254,7 +254,6 @@ int main()
 		////////////
 		////Game///
 		///////////
-		int save;
 
 		save = Game(c, d, h, boardName);
 		t2 = time(NULL); //ending time

@@ -21,8 +21,8 @@ public:
 
 	/////////////////////////////////////////////////////////
 
-	void setX(int newX);//changes the object's x value (height of the board)
-	void setY(int newY);//changes the object's y value (length of the board)
+	void setX(size_t newX);//changes the object's x value (height of the board)
+	void setY(size_t newY);//changes the object's y value (length of the board)
 	void displayBoard();//displays the board (displays the matrix, the internal representation of the board
 	void updateIntern(std::string position, std::string word); //update intern structure
 	bool RepeatWord(std::string word);//checks if the word to be written was already used
@@ -54,8 +54,8 @@ public:
 	bool RightPosition(std::string position);
 	~Board();
 private:
-	unsigned int y;//board length
-	unsigned int x;//board hight
+	size_t y;//board length
+	size_t x;//board hight
 	std::vector <std::vector <char> > matrix; //saves original board
 	std::vector < std::pair < std::string, std::string >>internStruct; //saves all the words and respective positions from the loaded board
 	std::vector < std::pair < std::string, std::string >>internStruct_new; //saves all the words and respective positions written on the game from the player
